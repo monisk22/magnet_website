@@ -1,0 +1,32 @@
+.contact-us-section {
+    .mobile-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .main-headign {
+
+        h3 {
+            font-size: 26px;
+            letter-spacing: normal;
+            color: $primary_color;
+            font-size: 38px;
+            font-family: $semi-bold;
+        }
+
+        .small-heading {
+            display: block;
+            font-size: 26px;
+            color: $secondary_color;
+            font-family: $semi-bold;
+        }
+
+        p {
+            font-size: 10px;
+            margin-bottom: 0;
+            color: #000;
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.app-feature {
+    .main-headign {
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 16px;
+            font-family: $semi_bold;
+
+        }
+    }
+
+    .features_questions {
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid #cccc;
+            font-family: $semi_bold;
+
+            .accordion-button {
+                &:first-child {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+
+                &::after {
+                    background-image: none;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                    background-color: transparent;
+                }
+
+                &:not(.collapsed) {
+                    color: $primary_color;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    .videos {
+        background: #F4F8FD;
+        overflow: hidden;
+        display: flex;
+
+        video {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.agent-section {
+    margin-top: 30px;
+
+    .links-section {
+        h6 {
+            font-weight: 600;
+            color: #000;
+        }
+    }
+
+    .main-headign {
+        letter-spacing: 1px;
+
+        .small-heading {
+            color: $secondary_color;
+            display: block;
+            font-size: 22px;
+            font-family: $semi_bold;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: $primary_color;
+            // font-weight: 800;
+            font-family: 'Poppins-bold';
+        }
+
+        .sub-heading {
+            font-size: 13px;
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            letter-spacing: 0;
+        }
+
+        hr {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    .links-section {
+        text-align: center;
+    }
+
+    .numbers-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .border-left {
+
+            // border-left: 2px solid #D9D9D9;
+            span {
+                border-left: 2px solid #D9D9D9;
+                display: block;
+            }
+        }
+
+        .numbers {
+            color: #000;
+
+            .counts {
+                font-size: 25px;
+                display: block;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .agent-video-section {
+        margin-top: 40px;
+
+        video {
+            width: 100%;
+        }
+    }
+}

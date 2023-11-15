@@ -1,0 +1,53 @@
+.benefits-partenrship {
+    background: $background;
+
+    .main-headign {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 0;
+            font-family: $semi-bold;
+        }
+    }
+
+    .benefit-info {
+        display: flex;
+        font-family: $primary_font;
+        padding: 20px;
+
+        .benefit-img {
+            margin-right: 10px;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        .benefit-text {
+            margin-left: 10px;
+
+            h6 {
+                font-weight: bolder;
+                font-size: 16px;
+                color: #000;
+            }
+
+            span {
+                color: #000;
+                font-size: 13px;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    hr {
+        margin: 0;
+        opacity: 0.15;
+    }
+}

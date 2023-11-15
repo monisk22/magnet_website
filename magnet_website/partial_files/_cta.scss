@@ -1,0 +1,45 @@
+.cta {
+    background-color: $primary_color;
+
+    .cta-content {
+        text-align: center;
+        padding: 30px 10px;
+
+        h2 {
+            color: #fff;
+            font-size: 16px;
+            text-transform: capitalize;
+            font-family: $semi_bold;
+        }
+
+        .btn {
+            color: #000;
+            padding: 10px 30px;
+            background: #fff;
+            border-radius: 10px;
+            font-size: 13px;
+            margin-top: 10px;
+            font-family: $primary_font;
+        }
+    }
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+
+    .btn {
+        color: #fff;
+        padding: 10px 30px;
+        background: #fff;
+        font-size: 13px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background: #1371E2;
+        font-family: $primary_font;
+        box-shadow: 5px 5px 28px -3px rgba(0, 0, 0, 0.15);
+    }
+}

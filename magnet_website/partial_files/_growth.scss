@@ -1,0 +1,60 @@
+.growth-info {
+    position: relative;
+
+    .parent-container {
+        padding: 10px;
+    }
+
+    .background-section {
+        background-color: $primary_color ;
+        padding-bottom: 40px;
+        padding-top: 40px;
+
+        .main-headign {
+            margin-top: 40px;
+
+            h3 {
+                color: #fff;
+                width: 90%;
+                font-size: 20px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+                font-family: $semi_bold;
+            }
+        }
+    }
+
+    .growth-info-more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        .icon-img {
+            margin-right: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .growth-text {
+        color: #fff;
+
+        h6 {
+            display: block;
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 0;
+            line-height: 0.4;
+            font-family: $secondary_font;
+        }
+
+        span {
+            font-size: 10px;
+            font-family: $primary_font;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,511 @@
+@import "../partial_files/vairable";
+@import "../partial_files/navbar";
+@import "../partial_files/contact";
+@import "../partial_files/agent";
+@import "../partial_files/growth";
+@import "../partial_files/workshope";
+@import "../partial_files/user-comment";
+@import "../partial_files/benefits";
+@import "../partial_files/service-support";
+@import "../partial_files/business-support";
+@import "../partial_files/app-feature";
+@import "../partial_files/cta";
+@import "../partial_files/footer"; 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../font/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url("../font/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'semi-bold';
+    src: url('../font/Poppins/Poppins-SemiBold.ttf');
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.body-content {
+    padding: 70px 0 0 0;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.main-headign {
+    text-align: center;
+
+    h3 {
+        font-family: $primary_font;
+        color: $secondary_color;
+    }
+
+    span {
+        font-family: $primary_font;
+    }
+}
+
+.call-btn {
+    border-radius: 37px;
+    border: 0.3px solid #00000082;
+    background: #FFF;
+    border-right: 0;
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+    input::placeholder {
+        color: #D9D9D9;
+    }
+
+    .mobile-number {
+        width: 30%;
+    }
+
+    select {
+        width: 30%;
+        background: none;
+        margin-left: 10px;
+    }
+
+    select,
+    input {
+        outline: none;
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    .submit-btn {
+        input {
+            color: #fff;
+            background-color: $primary_color;
+            font-family: $primary_font;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 0 37px 37px 0;
+        }
+    }
+}
+
+.myvideo::-webkit-media-controls {
+    display: none !important;
+}
+
+.myvideo::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.myvideo::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+@media(max-width:480px) {
+    header {
+        justify-content: space-between;
+
+        .mobile-btn {
+            display: block;
+        }
+
+        .logo {
+            margin-left: 0;
+
+            img {
+                width: 90%;
+            }
+        }
+
+        .mobile-btn {
+            display: flex;
+        }
+    }
+
+    .service-support {
+        .btn {
+            font-size: 14px;
+            height: 42px;
+        }
+
+        .service-info {
+            .service-img {
+                img {
+                    width: 70%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .google-img {
+        img {
+            width: 110px;
+        }
+    }
+
+    .modal-dialog.popup{
+        top: 100px;
+    }
+}
+
+@media(min-width:768px) {
+    header {
+        .play-store-btn {
+            display: block;
+        }
+    }
+
+    .benefits-partenrship {
+        .benefit-info-line {
+            display: none;
+        }
+    }
+
+    .business-support {
+        .bmobile-img {
+            display: none;
+        }
+
+        .desk-img {
+            display: block;
+        }
+    }
+
+    footer {
+        .social-icons {
+            img {
+                width: 30px;
+            }
+        }
+
+        .row {
+            flex-flow: wrap;
+        }
+
+        .branch-heading {
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        .footer-nav h5,
+        .office-address h5 {
+            font-size: 18px;
+        }
+
+        .office-address {
+            margin-bottom: 20px;
+        }
+    }
+
+    .terms-privacy {
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@media(min-width:992px) {
+
+    .agent-section {
+        margin-top: 100px;
+
+        .call-btn {
+            width: 400px;
+        }
+
+        .numbers-section {
+            position: relative;
+            right: 70px;
+
+            .numbers {
+                .counts {
+                    font-size: 48px;
+                }
+
+                .realtors-text {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .ml-section {
+            margin-left: 30px;
+        }
+
+        .main-headign {
+            text-align: left;
+
+            h3 {
+                font-size: 36px;
+            }
+
+            .small-heading {
+                font-size: 28px;
+            }
+
+            .sub-heading {
+                width: 100%;
+            }
+
+            hr {
+                width: 70%;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .links-section {
+            text-align: left;
+
+            h6 {
+                font-size: 20px;
+            }
+        }
+
+        .agent-video-section {
+            margin-top: -30px;
+            video{
+                width: 100%;
+            }
+        }
+    }
+
+    .growth-info {
+        .background-section {
+            .main-headign {
+                h3 {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .growth-info-more {
+            .icon-img {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+
+        .growth-text {
+            h6 {
+                font-size: 45px;
+                line-height: 0.9;
+            }
+
+            span {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .contact-us-section {
+        .mobile-img {
+            img {
+                width: 400px;
+            }
+        }
+
+        .call-btn {
+            width: 450px;
+        }
+
+        .main-headign {
+            text-align: left;
+
+            h3 {
+                font-size: 48px;
+            }
+
+            .small-heading {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .app-feature {
+        .main-headign {
+            h3 {
+                font-size: 32px;
+            }
+        }
+
+        .features_questions {
+            .accordion-item {
+                .accordion-button {
+                    &:first-child {
+                        font-size: 24px;
+                    }
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+        .videos{
+            overflow: visible;
+            video{
+                width: 120%;
+            }
+        }
+        .videos-sections{
+            position: relative;
+            right: 90px;
+
+        }
+    }
+
+    .service-support {
+        .service-btn {
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        .person-flex {
+            display: flex;
+        }
+
+        .service-btn {
+            ul {
+                li {
+                    button {
+                        border-radius: 40px;
+                        font-size: 16px;
+                        padding: 20px;
+                        width: 280px;
+                    }
+                }
+            }
+        }
+
+        .service-info {
+            .service-text {
+                position: relative;
+                text-align: left;
+                top: 60px;
+                width: 100%;
+
+                h6 {
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .service-img {
+                position: relative;
+                right: 130px;
+
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    .benefits-partenrship {
+        .main-headign {
+            h3 {
+                font-size: 32px;
+            }
+        }
+
+        .benefit-info {
+            .benefit-text {
+                h6 {
+                    font-size: 31px;
+                }
+
+                span {
+                    font-size: 16px;
+                    height: 48px;
+                }
+            }
+
+            .benefit-img {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    .cta {
+        .cta-content {
+            h2 {
+                font-size: 32px;
+                font-size: 25px;
+            }
+
+            .btn {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .service-support {
+        .main-headign {
+            h3 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .cta-btn {
+        .btn {
+            font-size: 25px;
+        }
+    }
+
+    .comment-section {
+        .main-headign {
+            h3 {
+                font-size: 32px;
+            }
+
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+}
